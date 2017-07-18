@@ -5,6 +5,11 @@ header {
   padding: 20px;
 }
 
+h2 {
+  float: right;
+  margin: 0;
+}
+
 section {
   display: flex;
   flex-wrap: wrap;

@@ -18,6 +18,16 @@ searchButton.addEventListener('click', function() {
 
     let html = "";
     for (let i = 0; i < data.results.length; i++) {
+      if (data.results[i].thumbnail === "") {
+        html += `
+        <div>
+        <h3>${data.results[i].title}</h3>
+        <img src="http://www.placecage.com/80/80">
+        <p>Ingredients: ${data.results[i].ingredients}</p>
+        <p>Find more information <a href="${data.results[i].href}">here</a></p>
+        </div>`
+      }
+      else {
       html += `
       <div>
       <h3>${data.results[i].title}</h3>
@@ -25,6 +35,7 @@ searchButton.addEventListener('click', function() {
       <p>Ingredients: ${data.results[i].ingredients}</p>
       <p>Find more information <a href="${data.results[i].href}">here</a></p>
       </div>`
+      }
     }
     section.innerHTML = html;
   });
