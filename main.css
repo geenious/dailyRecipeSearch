@@ -1,0 +1,23 @@
+
+
+header {
+  border-bottom: 2px solid grey;
+  padding: 20px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+  margin: 0 auto;
+}
+
+div {
+  box-sizing: border-box;
+  flex-basis: 20%;
+  margin: 2%;
+  padding: 10px;
+  border: 2px solid grey;
+  background-color: #2D8802;
+  text-align: center;
+}
