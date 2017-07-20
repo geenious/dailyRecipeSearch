@@ -21,7 +21,6 @@ searchButton.addEventListener('click', function() {
 
       let thumbnail = data.results[i].thumbnail || "http://www.placecage.com/80/80";
       
-
       html += `
         <div>
         <h3>${data.results[i].title}</h3>
